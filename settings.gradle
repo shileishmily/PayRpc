@@ -1,0 +1,10 @@
+rootProject.name = 'PayRpc'
+include 'pay-common'
+include 'pay-client'
+include 'pay-server'
+
+project(':pay-common').projectDir = "$rootDir/pay-common" as File
+project(':pay-client').projectDir = "$rootDir/pay-client" as File
+project(':pay-server').projectDir = "$rootDir/pay-server" as File
+include 'pay-web'
+
